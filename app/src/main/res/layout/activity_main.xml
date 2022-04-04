@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="420dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Выберите созвездие"
+            android:textColor="#FFFEFE"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/Open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Выбрать"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#B6B3B3" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/kopia_zvyozdymain_image_1209_1600_1200" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu2"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/orion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Орион"
+            app:backgroundTint="#737373" />
+
+        <Button
+            android:id="@+id/pegas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пегас"
+            app:backgroundTint="#737373" />
+
+        <Button
+            android:id="@+id/andromeda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Андромеда"
+            app:backgroundTint="#737373" />
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
